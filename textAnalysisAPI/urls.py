@@ -42,5 +42,6 @@ router.register(r'users', UserViewSet)
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     path('getTimeline/<str:twitterHandle>', views.getTimeline),
-    path('getReplies/<str:tweetId>', views.getReplies)
+    path('getReplies/<str:tweetId>', views.getReplies),
+    path('health', views.getHealth)
 ]

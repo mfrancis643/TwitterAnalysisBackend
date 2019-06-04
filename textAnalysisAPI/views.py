@@ -2,6 +2,7 @@ from textAnalysisAPI.twitterAPI import TwitterApi
 from textAnalysisAPI.textBlob import TextAnalysis
 from textAnalysisAPI.Entities.TwitterResponseEntity import TwitterHttpResponse
 from textAnalysisAPI.Entities.ErrorResponseEntity import ErrorHttpResponse
+from django.http import HttpResponse
 
 twitterInstance = TwitterApi()
 
@@ -30,6 +31,10 @@ def getReplies(request, tweetId):
 
     twitterHttpResponse = TwitterHttpResponse(round(score, 2), twitterData)
     return twitterHttpResponse.build()
+
+
+def getHealth(request):
+    return HttpResponse("ok")
 
 
 def getTweetMegaString(twitterData):
