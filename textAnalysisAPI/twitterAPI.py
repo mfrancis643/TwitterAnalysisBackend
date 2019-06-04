@@ -14,10 +14,10 @@ class TwitterApi:
         return "https://api.twitter.com/1.1/search/tweets.json?q=" + twitterHandle + "&result_type=mixed&count=100"
 
     def getClient(self):
-        consumerKey = "ZGU0Zz3AV1pRITRisZ02YurRM"
-        consumerSecret = "YibI3bSGuorwe6AzRfuFcEQ1CKbLUhpR3gAjmpksRvnM2N02EP"
-        accessToken = "629343940-7bk1Vwnxe9Y1DwMmIrGwGooEmJst6UG0uJtPEAzo"
-        accessSecret = "slVaYZBqBd5u6ugGWTvFI5zgm76KYtkUnhBpk2ZZSTyFH"
+        consumerKey = ""
+        consumerSecret = ""
+        accessToken = ""
+        accessSecret = ""
 
         consumer = oauth.Consumer(key=consumerKey, secret=consumerSecret)
         accessToken = oauth.Token(key=accessToken, secret=accessSecret)
