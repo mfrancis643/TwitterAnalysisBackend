@@ -18,3 +18,5 @@ Dev account.
 - Code for a looping search exists to fetch replies, using the date of the last fetched tweet as the paramater for a new search, however this quickly surpasses the Twitter Dev account limits, locking the account, and so it is not in this repo.
 
 *Although this is an entirely public facing app, a simple React.js UI exists (here)[https://github.com/mfrancis643/TwitterAnalysisFrontend]*
+
+**THESE AWS COMPONENTS HAVE BEEN REMOVED HOWEVER THESE SHOULD STILL RUN LOCALLY/DEPLOYED WITH NO PROBLEMS**
